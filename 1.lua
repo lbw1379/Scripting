@@ -399,7 +399,7 @@ end)
 local entitynames = {"Rush来了","Ambush来了","Snare","A60","A120"}
 
 window_player.label("credits: zoophiliaphobic#6287\noh my dayyzz",20)
-window_esp.toggle("entity esp",false,function(val)
+window_esp.toggle("透视怪esp",false,function(val)
     flags.esprush = val
     
     if val then
@@ -465,7 +465,7 @@ window_esp.toggle("entity esp",false,function(val)
     end
 end)
 
-window_esp.toggle("透视怪",false,function(val)
+window_esp.toggle("抽屉透视",false,function(val)
     flags.esplocker = val
     
     if val then
@@ -520,7 +520,7 @@ window_esp.toggle("透视怪",false,function(val)
     end
 end)
 
-window_esp.toggle("柜台透视",false,function(val)
+window_esp.toggle("柜子透视",false,function(val)
     flags.espchest = val
     
     if val then
@@ -967,9 +967,9 @@ window_misc.toggle("透视金币",false,function(val)
     end
 end)
 
-window_misc.label("bypass anticheat makes it so you CANT pick up ANYTHING so only do this in multiplayer or in the rooms area",32)
+window_misc.label("qq141ghost",32)
 
-window_misc.button("bypass anticheat",function()
+window_misc.button("141ghost汉化",function()
     local newhum = hum:Clone()
     newhum.Name = "humlol"
     newhum.Parent = char
@@ -1004,7 +1004,7 @@ if game.ReplicatedStorage:WaitForChild("GameData"):WaitForChild("Floor").Value =
         end
     end)
     
-    window_rooms.toggle("auto a-1000",false,function(val)
+    window_rooms.toggle("自动过a-1000",false,function(val)
         flags.autorooms = val
         
         if val then
