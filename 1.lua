@@ -55,7 +55,7 @@ function esp(what,color,core,name)
     end
     
     if core and name then
-        bill = Instance.new("141ghost汉化",game.CoreGui)
+        bill = Instance.new("qq141ghost汉化",game.CoreGui)
         bill.AlwaysOnTop = true
         bill.Size = UDim2.new(0,400,0,100)
         bill.Adornee = core
