@@ -55,7 +55,7 @@ function esp(what,color,core,name)
     end
     
     if core and name then
-        bill = Instance.new("qq141ghost汉化",game.CoreGui)
+        bill = Instance.new("qq141ghost",game.CoreGui)
         bill.AlwaysOnTop = true
         bill.Size = UDim2.new(0,400,0,100)
         bill.Adornee = core
@@ -150,7 +150,7 @@ local flags = {
 local DELFLAGS = {table.unpack(flags)}
 local esptable = {doors={},keys={},items={},books={},entity={},chests={},lockers={},people={},gold={}}
 
-local window_player = library.window("qq141ghost汉化")
+local window_player = library.window("qq141ghost")
 local window_esp = library.window("透视")
 local window_misc = library.window("功能")
 
@@ -396,10 +396,10 @@ window_esp.toggle("书本透视",false,function(val)
     end
 end)
 
-local entitynames = {"Rush来了","Ambush来了","Snare","A60","A120"}
+local entitynames = {"Rush moveing","Ambush moving","Snare","A60","A120"}
 
 window_player.label("credits: zoophiliaphobic#6287\noh my dayyzz",20)
-window_esp.toggle("透视怪esp",false,function(val)
+window_esp.toggle("透视怪",false,function(val)
     flags.esprush = val
     
     if val then
@@ -969,7 +969,7 @@ end)
 
 window_misc.label("qq141ghost",32)
 
-window_misc.button("141ghost汉化",function()
+window_misc.button("141ghost",function()
     local newhum = hum:Clone()
     newhum.Name = "humlol"
     newhum.Parent = char
