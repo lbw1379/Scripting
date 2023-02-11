@@ -150,7 +150,7 @@ local flags = {
 local DELFLAGS = {table.unpack(flags)}
 local esptable = {doors={},keys={},items={},books={},entity={},chests={},lockers={},people={},gold={}}
 
-local window_player = library.window("玩家")
+local window_player = library.window("qq141ghost汉化")
 local window_esp = library.window("透视")
 local window_misc = library.window("功能")
 
