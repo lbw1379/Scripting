@@ -52,7 +52,7 @@ Toggle.TextSize = 25
 Toggle.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Toggle.TextStrokeTransparency = 0
 
-StatusPF.Name = "StatusPF"
+StatusPF.Name = "状态"
 StatusPF.Parent = BG
 StatusPF.BackgroundColor3 = Color3.new(1, 1, 1)
 StatusPF.BackgroundTransparency = 1
@@ -83,7 +83,7 @@ Status.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Status.TextWrapped = true
 Status.TextXAlignment = Enum.TextXAlignment.Left
 
-Credit.Name = "Credit"
+Credit.Name = "141ghost"
 Credit.Parent = BG
 Credit.BackgroundColor3 = Color3.new(1, 1, 1)
 Credit.BackgroundTransparency = 1
