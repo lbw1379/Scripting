@@ -24,14 +24,14 @@ BG.Size = UDim2.new(0, 210, 0, 127)
 BG.Active = true
 BG.Draggable = true
 
-Title.Name = "Title"
+Title.Name = "穿墙脚本"
 Title.Parent = BG
 Title.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
 Title.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
 Title.BorderSizePixel = 2
 Title.Size = UDim2.new(0, 210, 0, 33)
 Title.Font = Enum.Font.Highway
-Title.Text = "Title"
+Title.Text = "穿墙"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.FontSize = Enum.FontSize.Size32
 Title.TextSize = 30
@@ -60,14 +60,14 @@ StatusPF.Position = UDim2.new(0.314285725, 0, 0.708661377, 0)
 StatusPF.Size = UDim2.new(0, 56, 0, 20)
 StatusPF.Font = Enum.Font.Highway
 StatusPF.FontSize = Enum.FontSize.Size24
-StatusPF.Text = "stars:"
+StatusPF.Text = "状态:"
 StatusPF.TextColor3 = Color3.new(1, 1, 1)
 StatusPF.TextSize = 20
 StatusPF.TextStrokeColor3 = Color3.new(0.333333, 0.333333, 0.333333)
 StatusPF.TextStrokeTransparency = 0
 StatusPF.TextWrapped = true
 
-Status.Name = "on"
+Status.Name = "关"
 Status.Parent = BG
 Status.BackgroundColor3 = Color3.new(1, 1, 1)
 Status.BackgroundTransparency = 1
@@ -75,7 +75,7 @@ Status.Position = UDim2.new(0.580952346, 0, 0.708661377, 0)
 Status.Size = UDim2.new(0, 56, 0, 20)
 Status.Font = Enum.Font.Highway
 Status.FontSize = Enum.FontSize.Size14
-Status.Text = "off"
+Status.Text = "关"
 Status.TextColor3 = Color3.new(0.666667, 0, 0)
 Status.TextScaled = true
 Status.TextSize = 14
@@ -99,9 +99,9 @@ Credit.TextStrokeTransparency = 0
 Credit.TextWrapped = true
 
 Toggle.MouseButton1Click:connect(function()
-	if Status.Text == "off" then
+	if Status.Text == "关" then
 		Clipon = true
-		Status.Text = "on"
+		Status.Text = "开"
 		Status.TextColor3 = Color3.new(0,185,0)
 		Stepped = game:GetService("RunService").Stepped:Connect(function()
 			if not Clipon == false then
@@ -115,9 +115,9 @@ Toggle.MouseButton1Click:connect(function()
 				Stepped:Disconnect()
 			end
 		end)
-	elseif Status.Text == "on" then
+	elseif Status.Text == "开" then
 		Clipon = false
-		Status.Text = "off"
+		Status.Text = "关"
 		Status.TextColor3 = Color3.new(170,0,0)
 	end
 end)
