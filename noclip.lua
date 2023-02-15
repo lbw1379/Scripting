@@ -24,7 +24,7 @@ BG.Size = UDim2.new(0, 210, 0, 127)
 BG.Active = true
 BG.Draggable = true
 
-Title.Name = "141ghost"
+Title.Name = "穿墙"
 Title.Parent = BG
 Title.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
 Title.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
