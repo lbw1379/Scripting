@@ -112,19 +112,19 @@ walkspeed1000.MouseButton1Down:connect(function()
 
 	char.Humanoid.WalkSpeed =200
 end)
-walkspeed250.Name = "250"
+walkspeed250.Name = "25"
 walkspeed250.Parent = main
 walkspeed250.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
 walkspeed250.BorderColor3 = Color3.fromRGB(85, 85, 255)
 walkspeed250.Position = UDim2.new(0.519480526, 0, 0.512077272, 0)
 walkspeed250.Size = UDim2.new(0, 184, 0, 50)
 walkspeed250.Font = Enum.Font.SourceSans
-walkspeed250.Text = "250"
+walkspeed250.Text = "25"
 walkspeed250.TextColor3 = Color3.fromRGB(0, 0, 0)
 walkspeed250.TextSize = 14.000
 walkspeed250.MouseButton1Down:connect(function()
 	local plr = game.Players.LocalPlayer
 	local char = plr.Character
 
-	char.Humanoid.WalkSpeed =250
+	char.Humanoid.WalkSpeed =25
 end)
